@@ -34,7 +34,7 @@ public static void main(String[] args) {
 		 	
 		 */
 		
-		/*for(int i=0;i<8;i++) {
+	 for(int i=0;i<8;i++) {
 			for(int j=0;j<8;j++) {
 				if(i%2==0) {
 					System.out.print( (j+1) % 2+" ");
@@ -44,21 +44,21 @@ public static void main(String[] args) {
 				
 			}
 			System.out.println();
-		}*/
+		} 
 		
-		for(int i=0;i<8;i++) {
-			for(int j=0;j<8;j++) {
-				if(i%2==0) {
-					char square = ( (j+1) % 2 == 0 )? blackSquare : whiteSquare;
-					System.out.print(square+" ");
-				}else {
-					char square = (j % 2) == 0 ? blackSquare : whiteSquare;
-					System.out.print(square+" ");
-				}
-				
-			}
-			System.out.println();
-		}
+//		for(int i=0;i<8;i++) {
+//			for(int j=0;j<8;j++) {
+//				if(i%2==0) {
+//					char square = ( (j+1) % 2 == 0 )? blackSquare : whiteSquare;
+//					System.out.print(square+" ");
+//				}else {
+//					char square = (j % 2) == 0 ? blackSquare : whiteSquare;
+//					System.out.print(square+" ");
+//				}
+//				
+//			}
+//			System.out.println();
+//		}
 		
 		// Assignment: Place the n-queens on the chessboard by taking input form the User
 		//			   eg: User says row -> 1 and col -> 1 as input -> replace it with queen
