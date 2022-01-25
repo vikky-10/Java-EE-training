@@ -1,6 +1,7 @@
 package session4;
 
 public class WhyArrays {
+	public static void main(String args[]) {
 	// Covid Data in Single Value Containers for USA
 	int usaTotalCases = 5421511;
 	int usaNewCases = 62354;
@@ -19,9 +20,10 @@ public class WhyArrays {
 	
 	// Reference Variable usaCases and indiaCases will be store in Stack
 	// Data will be in Heap and HashCode will be available in the Reference Variable
-	
-	System.out.println("usaCases is: "+usaCases);
-	System.out.println("indiaCases is: "+indiaCases);
+    
+ 
+	System.out.println("usaCases is: " + usaCases);
+	System.out.println("indiaCases is: " + indiaCases);
 	
 	// update the value in array
 	indiaCases[1] = 34511; // update the data in index1
