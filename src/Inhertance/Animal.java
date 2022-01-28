@@ -50,5 +50,17 @@ public void setWeight(int weight) {
 	this.weight = weight;
 }
 
+protected void chew() {
+	System.out.println("Animal.chew() is called");
+}
+
+
+public void eat() {
+	System.out.println("Animal.eat() called");
+}
+
+public void move() {
+	
+}
 
 }
