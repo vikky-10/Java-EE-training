@@ -1,4 +1,4 @@
-//package Assignments;
+package Assignments;
 //
 //import java.util.Scanner;
 //
@@ -35,3 +35,86 @@
 //	}
 //
 //}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// You are using Java
+import java.util.*;
+class ff{
+    public static void main(String args[]){
+    Scanner sc=new Scanner(System.in);
+    int n=sc.nextInt();
+    int arr[]=new int[n];
+    int flage=0;
+    for(int i=0;i<n;i++){
+    arr[i]= sc.nextInt();
+    }
+    int mnpd=0;
+    int mnpm=0;
+ 
+   int sum=0;
+   for(int e:arr){
+       sum+=e;
+   }
+  int rem=(sum%n);
+   int k=(sum-rem)/n;
+   int z=0;
+   int mo=0;
+   for(int i=0;i<n;i++){
+       
+       if(arr[i]>k){
+           int m=arr[i];
+           while(m!=k){
+                z++;
+                m--;
+           }
+          
+       }else if(arr[i]<k){
+           int l=arr[i];
+           while(l!=k){
+               l++;
+               z--;
+               mo++;
+           }
+       }
+   }
+   mnpd=z;
+   mnpm=mo;
+   System.out.println(mnpd+" "+mnpm);
+    }
+}
