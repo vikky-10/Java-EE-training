@@ -26,13 +26,26 @@ int count=0;
 		 ans.put(arr[i], 1);
 	 }
  }
- for(Map.Entry<Integer, Integer>e:ans.entrySet()) {
-	 if(e.getValue()==1) {
-		 count=count+1;
+// for(Map.Entry<Integer, Integer>e:ans.entrySet()) {
+//	 if(e.getValue()==1) {
+//		 count=count+1;
+//	 }
+//	 
+// }
+ int max=0;
+ int num=arr[0];
+ int fre=0;
+ for(int e: arr) {
+	 fre=ans.get(e);
+	 if(fre>max) {
+		 max=fre;
+		 num=e;
 	 }
-	 
  }
- System.out.println(count);
+ int x=ans.get(num);
+ int y=n-x;
+ System.out.println(y);
+ 
  
  
  
