@@ -5,46 +5,58 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Scanner;
-
+class recursion 
+{
+    int fact(int n) 
+    {
+        int result;
+        if (n == 1)
+            return 1;
+        result = fact(n - 1) * n;
+        return result;
+    }
+}
 public class Main {
 
 	public static void main(String[] args) {
+		   recursion obj = new recursion() ;
+           System.out.print(obj.fact(5));
 		// TODO Auto-generated method stub
-Scanner sc=new Scanner(System.in);
-int n=sc.nextInt();
-int arr[]=new int[n];
-for(int i=0;i<n;i++) {
-	arr[i]=sc.nextInt();
-}
-int count=0;
- Map<Integer,Integer>ans=new HashMap<>();
- for(int i=0;i<n;i++) {
-	 if(ans.containsKey(arr[i])) {
-		 ans.put(arr[i],ans.get(arr[i])+1);
-		 
-	 }else {
-		 ans.put(arr[i], 1);
-	 }
- }
+//Scanner sc=new Scanner(System.in);
+//int n=sc.nextInt();
+//int arr[]=new int[n];
+//for(int i=0;i<n;i++) {
+//	arr[i]=sc.nextInt();
+//}
+//int count=0;
+// Map<Integer,Integer>ans=new HashMap<>();
+// for(int i=0;i<n;i++) {
+//	 if(ans.containsKey(arr[i])) {
+//		 ans.put(arr[i],ans.get(arr[i])+1);
+//		 
+//	 }else {
+//		 ans.put(arr[i], 1);
+//	 }
+// }
 // for(Map.Entry<Integer, Integer>e:ans.entrySet()) {
 //	 if(e.getValue()==1) {
 //		 count=count+1;
 //	 }
 //	 
 // }
- int max=0;
- int num=arr[0];
- int fre=0;
- for(int e: arr) {
-	 fre=ans.get(e);
-	 if(fre>max) {
-		 max=fre;
-		 num=e;
-	 }
- }
- int x=ans.get(num);
- int y=n-x;
- System.out.println(y);
+// int max=0;
+// int num=arr[0];
+// int fre=0;
+// for(int e: arr) {
+//	 fre=ans.get(e);
+//	 if(fre>max) {
+//		 max=fre;
+//		 num=e;
+//	 }
+// }
+// int x=ans.get(num);
+// int y=n-x;
+// System.out.println(y);
  
  
  
